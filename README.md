@@ -19,6 +19,6 @@ You can implement the below code into your appropriate Execution Hook (BeforeSce
      
 ## Drawback
 
-> Dynamic variables in scenario names are have not been supported yet.
+> Dynamic variables in scenario names have not been supported yet.
     
     
