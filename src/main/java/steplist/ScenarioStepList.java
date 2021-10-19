@@ -6,7 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.*;
 
-public class ScenarioStepList extends Main {
+import static steplist.FileUtility.getListOfFile;
+
+public class ScenarioStepList implements StepList {
 
     public List<String> getAllStepsInScenario(String scenarioName, String rootPath) throws FileNotFoundException {
 
@@ -35,6 +37,7 @@ public class ScenarioStepList extends Main {
         }
         return allStepsList;
     }
+
     public Map<String, List<String>> searchConceptLineByLine(Scanner iterLines, List<String> allSteps, String scenarioName) {
 
         boolean isStepFound = false;

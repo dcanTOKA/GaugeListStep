@@ -10,7 +10,9 @@ import java.util.Scanner;
 
 import org.apache.commons.lang3.tuple.Pair;
 
-public class ConceptStepList extends Main {
+import static steplist.FileUtility.getListOfFile;
+
+public class ConceptStepList implements StepList {
 
     public List<String> getAllStepsInConcept(List<String> scenarioSteps, String rootPath) throws FileNotFoundException {
 
@@ -39,6 +41,7 @@ public class ConceptStepList extends Main {
         }
         return allStepsList;
     }
+
     public Pair<List<String>, List<String>> searchScenarioLineByLine(Scanner iterLines, List<String> allSteps, List<String> stepHasNoConcept, String stepName) {
 
         boolean isStepFound = false;
